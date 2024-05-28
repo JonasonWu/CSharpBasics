@@ -1,0 +1,47 @@
+1. What type would you choose for the following "numbers"?
+	* A person's telephone number
+		* string
+	* A person's height
+		* float
+	* A person's age
+		* byte
+	* A person's gender (Male, Female, Prefer Not To Answer)
+		* Enum
+	* A person's salary
+		* uint
+	* A book's ISBN
+		* ulong
+	* A book's price
+		* uint
+	* A book's shipping weight
+		* float
+	* A country's population
+		* uint
+	* The number of stars in the universe
+		* decimal
+	* The number of employees in each of the small or medium businesses in the United Kingdom (up to about 50000 employees per business)
+		* ushort
+2. What are the difference between value type and reference type variables? What is boxing and unboxing?
+	* Value type variables are stored on the stack memory, while reference type variables are stored in the heap memory.
+	* Value type variables are not collected by the garbage collector, while reference type variables are collected by the garbage collector.
+	* Value type variables cannot accept null values, while reference type variables can accept null values.
+	* Value type variables are created using struct or enum, while reference type variables are created using classes or interfaces.
+	* Boxing is the conversion of a primitive datatype into an object wrapper datatype. It is the process of
+		creating a wrapper object in the heap, storing the primitive value in the wrapper object, and using an object 
+		pointer to record the location of the wrapper object on the stack.
+	* Unboxing is the process of converting a value from an object wrapper type into the primitive data type. It is
+		the process of extracting the data from the wrapper object and placing it on the stack.
+	* Boxing and unboxing are both considered to be a subset of typecasting.
+3. What is meant by the terms managed resource and unmanaged resource in .NET
+	* Managed resources are resources that the garbage collector automatically handles. There is no concern about whether
+		the resource needs to be released or cleaned up, because the garbage collector will automatically handle those tasks.
+	* Unmanaged resources are resources that the garbage collector does not manage. The developer will need to handle the resource
+		and perform the operations necessary to clean up the memory space that contains the resources that are no longer needed.
+		Some examples of unmanaged resources include file handles, database connections, network sockets, etc.
+		Using the IDisposable interface and defining the dispose method correctly in a class will allow the custom 
+		handling of unmanaged resources once the class object goes out of scope.
+4. Whats the purpose of Garbage Collector in .NET?
+	* The Garbage Collector is used to simplify the developer's role by performing automatic memory management. The 
+		Garbage Collector, without needing any input from the developer, allocates space for any objects declared 
+		to the heap and releases the memory when the object is no longer needed.
+

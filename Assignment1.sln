@@ -5,6 +5,11 @@ VisualStudioVersion = 17.10.34902.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBasics", "CSharpBasics\CSharpBasics.csproj", "{9125840E-8363-41B9-BA56-357D0F326328}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01UnderstandingTypes", "01UnderstandingTypes", "{A83B6386-750C-403F-8655-2446444E57A9}"
+	ProjectSection(SolutionItems) = preProject
+		Questions.txt = Questions.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
