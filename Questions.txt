@@ -44,4 +44,4 @@
 	* The Garbage Collector is used to simplify the developer's role by performing automatic memory management. The 
 		Garbage Collector, without needing any input from the developer, allocates space for any objects declared 
 		to the heap and releases the memory when the object is no longer needed.
-
+		
