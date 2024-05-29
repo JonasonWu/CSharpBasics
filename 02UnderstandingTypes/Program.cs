@@ -1,6 +1,10 @@
 ﻿
 namespace Assignment1 {
     class NumberData {
+        /// <summary>
+        /// Prints a table of number types, bytes of storage, minimum value of number type, and maximum
+        /// value of number type.
+        /// </summary>
         public static void PrintNumberTypesAndDetails() {            
 
             string formatString = "{0,-15} {1,-8} {2,-30} {3,-30}";
@@ -19,6 +23,10 @@ namespace Assignment1 {
             Console.WriteLine(formatString, "decimal", sizeof(decimal), decimal.MinValue, decimal.MaxValue);
 
         }
+        /// <summary>
+        /// Prints a representation of time equivalencies based on the number of centuries entered.
+        /// </summary>
+        /// <param name="centuries">The number of centuries to get a time equivalency.</param>
         public static void PrintRepresentationOfCenturies(int centuries)
         {
             long years = centuries * 100L;
