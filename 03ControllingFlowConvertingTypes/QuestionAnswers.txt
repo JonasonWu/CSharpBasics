@@ -1,0 +1,54 @@
+1. What happens when you divide an int variable by 0?
+	* The program would crash and throw a DivideByZeroException, unless you use a try catch block to catch the exception.
+2. What happens when you divide a double variable by 0?
+	* When you divide a double variable by 0, it returns infinity as the result.
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+	* The value would wrap around and store an unexpected value by human standards. This is
+		because the computer only has 4 bytes to store an int, and overflowing an int variable
+		will not increase the space allocation for an integer. There is only 4 bytes of
+		storage for the result and thus, it is truncated, resulting in a representation of
+		an int value within the integer range.
+4. What is the difference between x = y++; and x = ++y;?
+	* x = y++ means to set x to be the value of y at the current moment, and then increment the value of y.
+	* x = ++y means to increment the value of y first, and then set x to be the resulting value of y.
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+	* break will put the loop to a stop and exit the loop. Any code that follows the loop is still executed.
+	* continue will ignore the rest of the code within the loop and go back to the 
+		start of the loop, performing the increment/decrement and checking the condition 
+		of the loop to determine whether to continue/exit the loop.
+	* return must be used within the context of a function and it will stop the loop execution,
+		and complete the function call.
+6. What are the three parts of a for statement and which of them are required?
+	* The for loop has initialization, condition, and increment/decrement.
+		* The initialization is ran only once at the start of the for loop and sets the initial condition of the loop.
+		* The condition is the stop condition of the for loop, and is ran right after the initialization or the 
+			increment/decrement to determine whether to perform another iteration of the for loop.
+		* The increment/decrement performs an update of the for loop after every iteration of the for loop is done.
+	* All 3 parts are not required, but would be good practice to set the values, or it would 
+		create an infinite loop or need a break statement to exit the loop.
+7. What is the difference between the = and == operators?
+	* The = operator sets a value. The == operator checks for equality of object addresses or primitive data type values or through the overrided operator overloaded method.
+8. Does the following statement compile? for ( ; true; ) ;
+	* Yes, it will compile and execute. It just means that:
+		* there is no scoped initialization variable 
+		* the increment/decrement operation will perform nothing
+		* the condition where the for loop should continue is always true. Unless there is a 
+			stopping condition within the for loop (like a break statement), the for loop
+			iterates indefinitely.
+9. What does the underscore _ represent in a switch expression?
+	* An underscore is used to denote the default switch case in the compact form of a switch expression. 
+		* If there are no matches with all the other cases, it will reach and select the default switch case.
+10. What interface must an object implement to be enumerated over by using the foreach
+statement?
+	* The IEnumerator and IEnumerable interface must be implemented for the foreach statement to be usable.
+	* The IEnumerator provides iterative capabilities for a collection inside a class.
+		* It requires the definition of MoveNext(), Reset(), and Current();
+			* MoveNext increments the collection index by 1 and returns a boolean to indicate whether a next value exists.
+			* Reset resets the collection index to initial value of -1, invalidating the enumerator.
+			* Current returns the object of the collection at the current index of the iterable.
+	* The IEnumerable provides the support for the foreach iteration.
+		* It requires the definition of the GetEnumerator() method.
+			* The GetEnumerator returns a IEnumerator object that contains the methods that allows the foreach statement to run.
+

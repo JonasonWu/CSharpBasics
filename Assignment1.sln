@@ -5,10 +5,17 @@ VisualStudioVersion = 17.10.34902.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01UnderstandingTypes", "01UnderstandingTypes", "{A83B6386-750C-403F-8655-2446444E57A9}"
 	ProjectSection(SolutionItems) = preProject
-		Questions.txt = Questions.txt
+		01UnderstandingTypes\QuestionsAnswers.txt = 01UnderstandingTypes\QuestionsAnswers.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02UnderstandingTypes", "02UnderstandingTypes\02UnderstandingTypes.csproj", "{559D0C8D-5A5F-40D2-9DB4-51D6D8AB7196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02UnderstandingTypes", "02UnderstandingTypes\02UnderstandingTypes.csproj", "{559D0C8D-5A5F-40D2-9DB4-51D6D8AB7196}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03ControllingFlowConvertingTypes", "03ControllingFlowConvertingTypes", "{3402BDC5-CC98-4008-97C0-94AF32C5E905}"
+	ProjectSection(SolutionItems) = preProject
+		03ControllingFlowConvertingTypes\QuestionAnswers.txt = 03ControllingFlowConvertingTypes\QuestionAnswers.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04PracticeLoopsAndOperatorProblems", "04PracticeLoopsAndOperatorProblems\04PracticeLoopsAndOperatorProblems.csproj", "{9B8945A0-7DE7-4AB8-B6DC-1AB3CB91D704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +27,10 @@ Global
 		{559D0C8D-5A5F-40D2-9DB4-51D6D8AB7196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{559D0C8D-5A5F-40D2-9DB4-51D6D8AB7196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{559D0C8D-5A5F-40D2-9DB4-51D6D8AB7196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8945A0-7DE7-4AB8-B6DC-1AB3CB91D704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8945A0-7DE7-4AB8-B6DC-1AB3CB91D704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8945A0-7DE7-4AB8-B6DC-1AB3CB91D704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8945A0-7DE7-4AB8-B6DC-1AB3CB91D704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
