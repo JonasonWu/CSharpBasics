@@ -1,14 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System;
-using System.Collections.Generic;
-using System.Data;
-using Microsoft.VisualBasic;
-
+﻿
 namespace Assignment1 {
-
     class NumberData {
-
         public static void PrintNumberTypesAndDetails() {            
 
             string formatString = "{0,-15} {1,-8} {2,-30} {3,-30}";
@@ -27,10 +19,10 @@ namespace Assignment1 {
             Console.WriteLine(formatString, "decimal", sizeof(decimal), decimal.MinValue, decimal.MaxValue);
 
         }
-
-        public static void PrintRepresentationOfCenturies(int centuries) {
+        public static void PrintRepresentationOfCenturies(int centuries)
+        {
             long years = centuries * 100L;
-            long days = (long) Math.Floor(years * 365.242199D);
+            long days = (long)Math.Floor(years * 365.242199D);
             long hours = days * 24L;
             decimal minutes = hours * 60M;
             decimal seconds = minutes * 60M;
@@ -40,12 +32,8 @@ namespace Assignment1 {
             Console.WriteLine($"{centuries} centuries = {years} years = {days} days = {hours} hours = {minutes} minutes = {seconds} seconds = {milliseconds} milliseconds = {microseconds} microseconds = {nanoseconds} nanoseconds");
 
         }
-
-
     }
-
     class Program {
-
         public static void Main(string[] args) {
 
             //Question 1:
@@ -68,11 +56,7 @@ namespace Assignment1 {
                 input = Console.ReadLine();
             } while (!int.TryParse(input, out n));
             NumberData.PrintRepresentationOfCenturies(n);
-            
-
 
         }
-    
     }
-
 }
